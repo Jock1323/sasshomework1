@@ -1,0 +1,25 @@
+.start{
+    display: none;
+    padding: 76px 0;
+    background-image: url('/img/circle-5.svg');
+    background-repeat: no-repeat;
+    background-position:calc(50% - 580px) bottom;
+    background-color:$primary-coral;
+    &__container{
+        display: flex;
+        padding-left: 90px;
+    }
+    &__title,
+    &__link{
+        margin-right:260px;
+        color: $secondary-state-green;
+    }
+    &__link{
+        border-color:$secondary-state-green;
+        margin: 0;
+        &:hover{
+            background-color:$secondary-state-green;
+            color: $primary-white;
+        }
+    }
+}

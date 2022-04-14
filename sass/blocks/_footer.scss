@@ -1,0 +1,37 @@
+.footer{
+    display: none;
+    padding: 48px 0;
+    background-color:$secondary-dark-green;
+    &__nav{
+        display:inline-block;
+    }
+    &__list{
+        margin:0;
+        margin-top: 25px;
+    }
+    &__text{
+        display: inline-block;
+        opacity: .6;
+        color:$primary-white;
+        margin-left: 125px;
+        &-call{
+            color:$primary-white ;
+        }
+    }
+    &__icons{
+        display: inline-block;
+        margin-left:300px;
+        text-align: right;
+        .fab{
+            font-size: 24px;
+            color: $primary-white;
+        }
+        .fab:nth-child(2){
+            margin-right: 16px;
+            margin-left: 16px;
+        }
+    }
+    &__end{
+        margin-top: 51px;
+    }
+}

@@ -1,0 +1,91 @@
+.hero{
+    padding-top: 223px;
+    background-image: url(/img/circle1.svg);
+    background-repeat: no-repeat;
+    background-position:calc(50% - 630px) 120px;
+    .container-fluid{
+        height: 356px;
+        background-image: url(/img/circle2.svg);
+        background-repeat: no-repeat;
+        background-position:right 8% bottom;
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+    }
+    &__title{
+        max-width: 635px;
+        font-size: 100px;
+        line-height: 100px;
+        margin: 0;
+        margin-right:auto;
+        color: $primary-white;
+        &-pink{
+            color: $primary-coral;
+        }
+    }
+    &__text{
+        position: relative;
+        max-width: 445px;
+        margin: 0;
+        margin-top: 79px;
+        color: $primary-white;
+    }
+    &__text::before{
+        position: absolute;
+        left: 0;
+        top:-60px;
+        content: "";
+        width: 50px;
+        height: 4px;
+        background-color: $secondary-blue;
+    }
+
+    @media only screen and (max-width:768px){
+        padding-top:120px;
+        .container-fluid{
+            height: 456px;
+            max-width: 683px;
+            background-position:center bottom;
+            padding: 0 10px;
+        }
+        &__info{
+            flex-direction: column;
+        }
+        &__title{
+            max-width:100%;
+            font-size: 64px;
+            line-height: 56px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        &__text{
+            max-width: 457px;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            margin-top: 24px;
+        }
+        &__text::before{
+            display: none;
+        }
+
+    }
+    @media only screen and (max-width:375px){
+        padding-top:80px;
+        .container-fluid{
+            height: 400px;
+            max-width: 350px;
+        }
+        &__title{
+            font-size:40px;
+            line-height:40px;
+        }
+        &__text{
+            font-size: 15px;
+            line-height: 28px;
+            margin-top:18px;
+        }
+    }
+
+}
