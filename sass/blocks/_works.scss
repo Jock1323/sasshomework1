@@ -69,6 +69,20 @@
         color: rgba($primary-white, .8);
     }
 }
+@media only screen and (max-width:1024px){
+        .works{
+            padding:100px 0;
+            background-position:calc(50% + 330px) top;
+            &__title{
+                font-size: 32px;
+                line-height: 32px;
+            }
+            &__info{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+}
 @media only screen and (max-width:768px){
         .works{
             padding:100px 0;
