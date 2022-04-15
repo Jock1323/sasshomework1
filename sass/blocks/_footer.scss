@@ -48,7 +48,6 @@
             // margin-right: auto;
             // margin-left: auto;
             text-align: right;
-            margin-top: 24px;
         }
         &__icons{
             display:flex;
@@ -56,11 +55,14 @@
             width: 100%;
             margin-top: 32px;
         }
+        &__end{
+            margin-top: 0;
+        }
         .inner__icons{
             margin-right: auto;
         }
     }
-    @media only screen and (max-width:375px){
+    @media only screen and (max-width:576px){
         &__container{
             flex-direction: column;
             align-items: center;

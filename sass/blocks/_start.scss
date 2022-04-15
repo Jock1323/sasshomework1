@@ -39,8 +39,8 @@
             margin-left:86px;
         }
     }
-    @media only screen and (max-width:375px){
-        background-position:calc(50% - 300px) bottom;
+    @media only screen and (max-width:576px){
+        background-position:calc(50% - 180px) bottom;
         padding: 83px 0;
         &__container{
             flex-direction: column;
@@ -58,5 +58,8 @@
         &__link{
             margin-top: 24px;
         }
+    }
+    @media only screen and (max-width:375px){
+        background-position:calc(50% - 150px) bottom;
     }
 }

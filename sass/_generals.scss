@@ -53,6 +53,17 @@ a{
         padding: 0 10px;
     }
 }
+@media only screen and (max-width:576px){
+    .container{
+        max-width:500px;
+        padding: 0 10px;
+    }
+    .btn-link{
+        display: inline-block;
+        margin-right: 48px;
+        margin-top: 36px;
+    }
+}
 @media only screen and (max-width:375px){
     .container{
         max-width:350px;

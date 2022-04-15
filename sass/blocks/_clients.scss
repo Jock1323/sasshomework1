@@ -71,4 +71,24 @@
             max-width: 573px;
         }
     }
+    @media only screen and (max-width:576px){
+        padding: 100px 0;
+        background-position:calc(50% - 150px) top,
+        calc(50% + 140px) bottom;
+        &__title{
+            font-size: 32px;
+            line-height: 32px;
+        }
+        &__flex{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__card{
+            max-width: 573px;
+        }
+    }
+    @media only screen and (max-width:375px){
+        background-position:calc(50% - 110px) top,
+        calc(50% + 100px) bottom;
+    }
 }
