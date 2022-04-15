@@ -36,6 +36,8 @@
     &__end{
         display: block;
         margin-top: 51px;
+        color:$primary-white;
+        opacity: .6;
     }
     @media only screen and (max-width:768px){
         &__container{
@@ -43,20 +45,39 @@
             justify-content: space-between;
         }
         &__text{
-            margin-left: 0;
+            // margin-right: auto;
+            // margin-left: auto;
+            text-align: right;
+            margin-top: 24px;
         }
         &__icons{
             display:flex;
-            margin: 0;
+            margin-left: 0;
+            width: 100%;
+            margin-top: 32px;
         }
         .inner__icons{
             margin-right: auto;
         }
-        &__end{
-            margin: 0;
-        }
     }
-    @media only screen and (max-width:768px){
-
+    @media only screen and (max-width:375px){
+        &__container{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__text{
+            text-align: center;
+            margin-left: 0;
+        }
+        &__icons{
+            flex-direction: column;
+            align-items: center;
+        }
+        .inner__icons{
+            margin-right: 0;
+        }
+        &__end{
+            margin-top: 16px;
+        }
     }
 }

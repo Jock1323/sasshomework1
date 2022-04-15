@@ -53,10 +53,11 @@
             left: 0;
             top: 0;
             margin: 0;
-            background-image:linear-gradient( to left, $secondary-police-blue 70% ,rgba(0,0,0,.3) 70%);
+            background-image:linear-gradient( to left, $secondary-police-blue 70%, rgba(0,0,0,.3) 70% );
             text-align: end;
             transform: translateX(200%);
             transition: transform .25s;
+            z-index: 100;
         }
         &__item{
             margin: 0;
