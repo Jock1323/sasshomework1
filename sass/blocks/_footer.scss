@@ -1,7 +1,9 @@
 .footer{
-    display: none;
     padding: 48px 0;
     background-color:$secondary-dark-green;
+    &__container{
+        display: flex;
+    }
     &__nav{
         display:inline-block;
     }
@@ -20,7 +22,7 @@
     }
     &__icons{
         display: inline-block;
-        margin-left:300px;
+        margin-left:auto;
         text-align: right;
         .fab{
             font-size: 24px;
@@ -32,6 +34,29 @@
         }
     }
     &__end{
+        display: block;
         margin-top: 51px;
+    }
+    @media only screen and (max-width:768px){
+        &__container{
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__text{
+            margin-left: 0;
+        }
+        &__icons{
+            display:flex;
+            margin: 0;
+        }
+        .inner__icons{
+            margin-right: auto;
+        }
+        &__end{
+            margin: 0;
+        }
+    }
+    @media only screen and (max-width:768px){
+
     }
 }

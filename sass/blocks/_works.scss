@@ -1,10 +1,10 @@
 .works {
-    display: none;
     padding: 140px 0;
     background-color: $secondary-state-green;
     background-image: url(/img/circle-3.svg);
     background-repeat: no-repeat;
     background-position:calc(50% + 630px) bottom;
+    width: 100%;
 
     &__info {
         align-items: flex-start;
@@ -67,5 +67,29 @@
         font-size: 15px;
         line-height: 25px;
         color: rgba($primary-white, .8);
+    }
+}
+@media only screen and (max-width:768px){
+        .works{
+            padding:100px 0;
+            background-position:calc(50% + 330px) top;
+            &__title{
+                font-size: 32px;
+                line-height: 32px;
+            }
+        }
+}
+@media only screen and (max-width:375px){
+    .works{
+        padding:64px 0;
+        background-position:calc(50% + 130px) top;
+    }
+    .works-flex{
+        flex-direction: column;
+        align-items: center;
+        &__title,
+        &__text{
+            text-align: center;
+        }
     }
 }

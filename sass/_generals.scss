@@ -12,12 +12,12 @@ body{
 }
 .container,
 .container-fluid{
-    width: 1130px;
+    max-width: 1130px;
     padding: 0 10px;
     margin: 0 auto;
 }
 .container-fluid{
-    width: 1200px;
+    max-width: 1200px;
     padding-left:100px;
 }
 ul li{

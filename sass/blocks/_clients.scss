@@ -1,5 +1,4 @@
 .clients{
-    display: none;
     padding:140px 0;
     background-color: $secondary-jungle-green;
     background-image: url(/img/rectangle-1.svg),
@@ -55,5 +54,21 @@
        display: flex;
        justify-content: center;
        margin-top: 32px;
+    }
+    @media only screen and (max-width:768px){
+        padding: 100px 0;
+        background-position:calc(50% - 310px) top,
+        calc(50% + 300px) bottom;
+        &__title{
+            font-size: 32px;
+            line-height: 32px;
+        }
+        &__flex{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__card{
+            max-width: 573px;
+        }
     }
 }
